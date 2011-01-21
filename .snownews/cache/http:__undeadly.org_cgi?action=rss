@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://purl.org/rss/1.0/"
+  xmlns:snow="http://snownews.kcore.de/ns/1.0/">
+
+<snow:lastmodified>Fri, 24 Dec 2010 04:06:57 GMT</snow:lastmodified>
+<channel rdf:about="http://undeadly.org/cgi?action=rss">
+<title>OpenBSD Journal</title>
+<link>http://undeadly.org/</link>
+<description>The OpenBSD Community.</description>
+</channel>
+
+<item rdf:about="http://undeadly.org/cgi?action=article&amp;sid=20101224204626">
+<title>OpenBSD 4.8-current on a midrange laptop: Dell Studio 15</title>
+<link>http://undeadly.org/cgi?action=article&amp;sid=20101224204626</link>
+<description>&lt;a href="misc/201012/studio15-front.jpg"&gt;&lt;img src="misc/201012/studio15-front_s.jpg" align="right"&gt;&lt;/a&gt;
+&lt;p&gt;Ian Darwin (ian@) writes in with a story he did together with Holger Mikolon about their efforts to get OpenBSD running on new hardware.
+&lt;p&gt;OpenBSD developers have generally chosen laptops from makers other than Dell, perhaps due to
+the fact that you can't usually walk into a computer store to try out OpenBSD support for Dell notebooks:
+Dell sells most of their computers online.
+Sometimes, though, it makes sense to buy a brand-name computer and expect that not every
+peripheral will work on your favorite open-source operating system.
+As jcr@ already said on Undeadly when talking about
+&lt;a href='http://www.undeadly.org/cgi?action=article&amp;sid=20100718211512'&gt; portable systems: &lt;/a&gt;
+"If you pick the right system, there will still be plenty of FUN to be had
+in adding or improving support for some of the unsupported or under-supported parts."
+Note that jcr@ settled on a larger and somewhat different Dell (Alien 17) for one of the laptops in that article.
+
+Read &lt;a href="/cgi?action=article&amp;amp;sid=20101224204626"&gt;more&lt;/a&gt;...
+
+</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>a235767bf918fa131a10180ae563ef30</snow:hash>
+<snow:date>1293163617</snow:date>
+</item>
+
+<item rdf:about="http://undeadly.org/cgi?action=article&amp;sid=20101216231634">
+<title>Support for Realtek 802.11n USB devices</title>
+<link>http://undeadly.org/cgi?action=article&amp;sid=20101216231634</link>
+<description>&lt;p&gt;Damien Bergamini (damien@) submitted an article on his latest work on wireless networking devices. He recently &lt;a href="http://marc.info/?l=openbsd-cvs&amp;m=129210053911854&amp;w=2"&gt;committed&lt;/a&gt; rsu(4), below is the commit message and some background behind it:
+&lt;blockquote style="background-color: #F0F0F0; padding: 1px 10px;"&gt;
+&lt;pre&gt;
+CVSROOT:        /cvs
+Module name:        src
+Changes by:        damien@cvs.openbsd.org        2010/12/11 13:48:21
+
+Modified files:
+        share/man/man4 : usb.4 Makefile
+        sys/dev/usb    : files.usb
+        sys/arch/i386/conf: GENERIC
+        sys/arch/amd64/conf: GENERIC
+Added files:
+        share/man/man4 : rsu.4
+        sys/dev/usb    : if_rsu.c if_rsureg.h
+
+Log message:
+rsu(4), a driver for Realtek RTL8188SU, RTL8191SU and RTL8192SU
+802.11n USB devices.
+These are FullMAC devices that require a firmware to operate;
+see man page for details.
+
+Great thanks to Brad for donating hardware.
+Committed over the TRENDnet TEW-649UB.
+
+ok deraadt@
+&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+With this commit and the &lt;a href="http://marc.info/?l=openbsd-cvs&amp;m=128897633210060" target="_blank"&gt;recent commit&lt;/a&gt; of 
+&lt;a href="http://www.openbsd.org/cgi-bin/man.cgi?query=urtwn" target="_blank"&gt;urtwn(4)&lt;/a&gt;,
+OpenBSD -current now has support for all the single-chip 802.11n USB
+devices from Realtek.
+With the &lt;a href="http://www.openbsd.org/cgi-bin/man.cgi?query=run" target="_blank"&gt;run(4)&lt;/a&gt; 
+and &lt;a href="http://www.openbsd.org/cgi-bin/man.cgi?query=otus" target="_blank"&gt;otus(4)&lt;/a&gt; drivers
+already in 4.8, OpenBSD supports a large amount of the 802.11n
+USB devices available in stores.
+One notable exception is the AR9271 chip from Atheros which is not yet
+supported, but this is &lt;a href="http://marc.info/?l=openbsd-cvs&amp;m=129235165205856" target="_blank"&gt;being worked on&lt;/a&gt;.
+&lt;/p&gt;
+
+Read &lt;a href="/cgi?action=article&amp;amp;sid=20101216231634"&gt;more&lt;/a&gt;...
+
+</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>82a83816eeaa8c2c49156bb355336aef</snow:hash>
+<snow:date>1292541370</snow:date>
+</item>
+
+<item rdf:about="http://undeadly.org/cgi?action=article&amp;sid=20101206081625">
+<title>Ports Hackathon 2010</title>
+<link>http://undeadly.org/cgi?action=article&amp;sid=20101206081625</link>
+<description>&lt;p&gt;A few weeks ago, the annual ports hackathon was held again in Budapest, Hungary. The event, again organized by Robert Nagy, was a great success: much of the work has already been committed to the OpenBSD cvs repositories.
+&lt;p&gt;First time visitor Jacob Meuser wrote in with his take on the event: 
+
+&lt;blockquote style="background-color:#e0e0e0;padding: 1px 7px 1px 7px;"&gt;
+&lt;a href="images/p2k10/serenade-full.jpg"&gt;&lt;img src="images/p2k10/serenade.jpg" height="240" width="320" alt="A serenade for a medieval damsel" align="right"&gt;&lt;/a&gt;
+&lt;p&gt;scene: jakemsr's house, Eugene, Oregon, USA, Oct 22, 2010:
+&lt;blockquote style="background-color:#f0f0f0;padding: 1px 7px 1px 7px;"&gt;
+"OK.  See you in 8 days."
+&lt;br&gt;Door closes.
+&lt;br&gt;5 minutes later ..
+&lt;br&gt;Door opens.
+&lt;br&gt;"What?  Didn't you have a bus to catch?"
+&lt;br&gt;"Yeah, missed it."
+&lt;/blockquote&gt;
+&lt;p&gt;That was the scene at my house in Eugene, Oregon, Oct 22, 2010.
+Oregon's in the northwestern region of the United States, in case
+you were wondering.  The bus I missed was to take me to the train
+station downtown, where I was to board a train that would take me
+to Portland, where I'd take a lightrail to the airport, where I'd
+get on a plane destined for Amsterdam, where I'd meet jasper@ and
+get on plane headed to p2k10 in Budapest, Hungary.
+
+&lt;p&gt;Geez, not even out of the neighborhood and I'm already missing
+connections.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Please read on for the rest of Jacob's story.
+Read &lt;a href="/cgi?action=article&amp;amp;sid=20101206081625"&gt;more&lt;/a&gt;...
+
+</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>91e2fff3b4d96ee2bd722592e8fa788f</snow:hash>
+<snow:date>1291666711</snow:date>
+</item>
+
+<item rdf:about="http://undeadly.org/cgi?action=article&amp;sid=20101115091138">
+<title>[c2k10] Interview with Henning Brauer (henning@)  Part 11</title>
+<link>http://undeadly.org/cgi?action=article&amp;sid=20101115091138</link>
+<description>&lt;!-- First Section --&gt;
+&lt;p&gt;
+&lt;a href="http://www.openbsd-support.com/p/c2k10/henning/p1040376m.html"&gt;
+&lt;img src="http://www.openbsd-support.com/p/c2k10/henning/p1040376s.jpg"
+alt="p1040376s" border="1" align="right"&gt;&lt;/a&gt;
+Henning Brauer (henning@) has been an inspiration to me since I started using OpenBSD. On misc@, there are a few individuals that I follow. Nick Holland's (nick@) posts are very educational and informative and I try to read Henning's as well.  His posts are usually to the point, authoritative and often funny. When you meet henning@ in person and get to know him better, you learn that he has a great sense of humour, that is, if it is not evident already on misc@. He also makes the most out of life even when he misses a step. He has the scars and crutches to prove it. Well, what doesn't kill you...
+&lt;/p&gt;
+
+&lt;p&gt;
+Read on to learn why I think that he's a great inspiration to me and what correlation there might be between beer and daemons:
+
+&lt;/p&gt;
+
+Read &lt;a href="/cgi?action=article&amp;amp;sid=20101115091138"&gt;more&lt;/a&gt;...
+
+</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>e0b80463ec63ab8466325fbd1eaf4ce7</snow:hash>
+<snow:date>1290371446</snow:date>
+</item>
+
+</rdf:RDF>

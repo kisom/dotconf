@@ -1,0 +1,24 @@
+terminal
+iceweasel
+fbsetbg -l
+gftp
+pornview
+import -window root cmus.jpg
+firefox
+gnome-power-manager
+ddg testing
+xscreensaver-demo
+import -window root /home/kyle/pics/screenshots/fluxmenu.png
+ff
+gvim
+k3b
+gparted
+gksu gparted
+wicd-client
+cmus
+audacious
+easytag
+suspend
+xw mutt
+cmus-remote -p
+cmus-remote -u

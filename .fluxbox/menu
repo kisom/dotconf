@@ -1,0 +1,54 @@
+[begin] (ono-sendai)
+    [submenu] (sh)
+        [exec] (vim)        { xterm -e vim }
+        [exec] (xterm)      { xterm }
+        [exec] (term)       { terminal }
+        [exec] (rootsh)     { xterm -e sudo su - }
+    [end]
+    [submenu] (remote)
+        [exec] (logg)       { xterm -e ssh lan.thelandofgreenginger.net }
+        [exec] (devious)    { xterm -e ssh kisom@devio.us }
+        [exec] (freeside)   { xterm -e ssh kisom@brokenlcd.net }
+        [exec] (virek)      { xterm -e ssh virek.brokenlcd.net }
+        [exec] (blueant)    { xterm -e ssh blueant.brokenlcd.net }
+    [end]
+    [submenu] (net)
+        [exec] (lynx)       { xterm -e lynx }
+        [exec] (links)      { xterm -e links }
+        [exec] (silc)       { xterm -e silc }
+        [exec] (irssi)      { xterm -e irssi }
+        [exec] (ttyter)     { xterm -e ttyter.pl }
+        [exec] (ddg)        { xterm -e ddg }
+        [exec] (3G-conn)    { xterm -e sudo wvdial tmo }
+        [exec] (ff)         { firefox }
+    [end]
+    [submenu] (mail|news)
+        [exec] (mutt)       { xterm -e mutt }
+        [exec] (abook)      { xterm -e abook }
+        [exec] (calcurse)   { xterm -e calcurse }
+        [exec] (snownews)   { xterm -e snownews }
+    [end]
+    [submenu] (mmx)
+        [exec] (cmus)       { xterm -e cmus }
+        [exec] (vol)        { xterm -e alsamixer }
+        [exec] (img)        { pornview }
+        [exec] (vlc)        { vlc }
+    [end]
+    [submenu] (fluxconf)
+        [config] (Configuration)
+        [submenu] (Styles) {}
+            [stylesdir] (/usr/share/fluxbox/styles)
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [workspaces] (Workspaces)
+        [reconfig] (Reconfigure)
+        [restart] (Restart)
+        [exit] (Exit)
+    [end]
+    [submenu] (system)
+        [exec] (top)        { xterm -e top }
+        [exec] (messages)   { xterm -e sudo tail -f /var/log/messages }
+        [exec] (reboot)     { xterm -e sudo reboot }
+        [exec] (poweroff)   { xterm -e sudo poweroff }
+    [end]    
+[end]

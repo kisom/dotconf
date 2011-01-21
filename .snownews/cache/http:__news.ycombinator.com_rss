@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://purl.org/rss/1.0/"
+  xmlns:snow="http://snownews.kcore.de/ns/1.0/">
+
+<channel rdf:about="http://news.ycombinator.com/rss">
+<title>Hacker News</title>
+<link>http://news.ycombinator.com/</link>
+<description>Links for the intellectually curious, ranked by readers.</description>
+</channel>
+
+<item rdf:about="http://www.wired.com/epicenter/2011/01/duckduckgo-google-privacy/">
+<title>DuckDuckGo Challenges Google on Privacy (With a Billboard in San Francisco)</title>
+<link>http://www.wired.com/epicenter/2011/01/duckduckgo-google-privacy/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122120"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>c7609667563530549363df0797061583</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.engadget.com/2011/01/19/google-voice-now-lets-you-port-your-own-phone-number/">
+<title>Google Voice now lets you port your own phone number</title>
+<link>http://www.engadget.com/2011/01/19/google-voice-now-lets-you-port-your-own-phone-number/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122430"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>e53301e61b8d988533dd5294bbd4c29d</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://pivotallabs.com/users/dan/blog/articles/1537-introducing-pivotal-tracker-pricing">
+<title>Pivotal Tracker will no longer be free in 6 months</title>
+<link>http://pivotallabs.com/users/dan/blog/articles/1537-introducing-pivotal-tracker-pricing</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122482"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>3d10f2d4173b32b12b55c03b95c9bd65</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://romvf.wordpress.com/2011/01/19/open-letter/">
+<title>The polynomial algorithm for 3-SAT problem (or P=NP)</title>
+<link>http://romvf.wordpress.com/2011/01/19/open-letter/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121727"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>25a391f4f0e6c16eb0ade6795e8686d7</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.dustindiaz.com/about-that-slowness-on-twitter/">
+<title>About that slowness on Twitter&#x2026;</title>
+<link>http://www.dustindiaz.com/about-that-slowness-on-twitter/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122426"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>4279769231a7f9f23aa371b8cf3b1a3e</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://techrice.com/2011/01/20/japanese-porn-star-practices-calligraphy-for-one-million-chinese-fanboys-on-sina-weibo/">
+<title>Chinese Social Media Lessons from a Japanese Porn Star</title>
+<link>http://techrice.com/2011/01/20/japanese-porn-star-practices-calligraphy-for-one-million-chinese-fanboys-on-sina-weibo/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122551"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>3208415fbdc7883b57f1fd7f072685f0</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="https://mozillalabs.com/zaphod/">
+<title>Zaphod - JavaScript written in JavaScript</title>
+<link>https://mozillalabs.com/zaphod/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122565"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>bab6ad7a97c8d4aab4aea0d13d5ddfda</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.deepgreencrystals.com/archives/2011/01/living-social-h.html">
+<title>LivingSocial Hacked</title>
+<link>http://www.deepgreencrystals.com/archives/2011/01/living-social-h.html</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122693"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>04d339abf7a92f15319dd8ede294d39f</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://news.sciencemag.org/sciencenow/2011/01/the-worlds-smallest-farmers.html">
+<title>An amoeba who raises bacteria crops is the world's tiniest farmer</title>
+<link>http://news.sciencemag.org/sciencenow/2011/01/the-worlds-smallest-farmers.html</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122544"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>8891c785031d923d0549d0d7018f062a</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://ycombinator.com/newsnews.html#19jan">
+<title>Why HN was slow and how Rtm fixed it</title>
+<link>http://ycombinator.com/newsnews.html#19jan</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2120756"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>e05707c02590c4b79388969026c0c75f</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://arstechnica.com/tech-policy/news/2011/01/sen-al-franken-no-joke-comcast-trying-to-whack-netflix.ars">
+<title>Senator Al Franken: No joke, Comcast trying to whack Netflix</title>
+<link>http://arstechnica.com/tech-policy/news/2011/01/sen-al-franken-no-joke-comcast-trying-to-whack-netflix.ars</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121105"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>e89b88d2a200cd92c484a8ea2dc9d2e5</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="https://github.com/klbostee/dumbo">
+<title>Dumbo - Python module that allows you to easily write and run Hadoop programs</title>
+<link>https://github.com/klbostee/dumbo</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122321"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>80a5404c13c52fa9615b35d2d0cc092c</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.latimes.com/business/la-fi-internet-tax-20110120,0,2567343.story">
+<title>California lawmaker pushes to tax online sales</title>
+<link>http://www.latimes.com/business/la-fi-internet-tax-20110120,0,2567343.story</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122521"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>13ce7de0dae0d50b60b31e7fd4eaa102</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="https://www.eff.org/deeplinks/2011/01/sony-v-hotz-sony-sends-dangerous-message">
+<title>Sony uses DMCA to silence speech that reveals its security flaws</title>
+<link>https://www.eff.org/deeplinks/2011/01/sony-v-hotz-sony-sends-dangerous-message</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121217"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>c4825e415975df3034a63b58d3f97745</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://getpunchd.com">
+<title>Show HN: New Punchd website (like foursquare for the masses)</title>
+<link>http://getpunchd.com</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122199"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>a84db5c41e7a3012f945569742d1a633</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.allfacebook.com/facebooks-hacker-cup-called-a-failure-2011-01">
+<title>Facebook&#x2019;s Hacker Cup Called A Failure</title>
+<link>http://www.allfacebook.com/facebooks-hacker-cup-called-a-failure-2011-01</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122254"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>05f625d08f0d40dcfafeb84f6d941f75</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://torrentfreak.com/bittorrent-p2p-live-streaming-110119/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Torrentfreak+%28Torrentfreak%29">
+<title>BitTorrent Inventor Demos New P2P Live Streaming Protocol</title>
+<link>http://torrentfreak.com/bittorrent-p2p-live-streaming-110119/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Torrentfreak+%28Torrentfreak%29</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122614"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>0e1e9edc339af0335f6ae14b55aa3b29</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://fosspatents.blogspot.com/2011/01/google-is-patently-too-weak-to-protect.html">
+<title>Google patent portfolio is too weak to protect android</title>
+<link>http://fosspatents.blogspot.com/2011/01/google-is-patently-too-weak-to-protect.html</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122582"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>42b592379e341aa98bc97dcee13f9bf1</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://blog.hypertable.com/?p=14">
+<title>Hypertable vs. HBase Performance Evaluation</title>
+<link>http://blog.hypertable.com/?p=14</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122556"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>656cea16593a0e1a6a2bfbb5dd3ac1f6</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://vigilance.co.in/development-tools-available-for-scala-language/">
+<title>Development Tools for Scala Language</title>
+<link>http://vigilance.co.in/development-tools-available-for-scala-language/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122379"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>fb0291e71533513971ade2abb22a55f0</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://stackoverflow.com/questions/448673/how-do-emulators-work-and-how-are-they-written/448689#448689">
+<title>How do emulators work and how are they written?</title>
+<link>http://stackoverflow.com/questions/448673/how-do-emulators-work-and-how-are-they-written/448689#448689</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2120927"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>4fc9170a94d55bb0a73ce7bdcc78cc19</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://blog.whatwg.org/html-is-the-new-html5">
+<title>HTML is the new HTML5</title>
+<link>http://blog.whatwg.org/html-is-the-new-html5</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121356"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>93f40bafaedf5622e7263659220fb4f3</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="https://docs.google.com/document/d/14Ym6LTR9hLBGI0cM0mMU_BDEKG3ysmRsakwzA5Z_Ce4/edit?hl=en&amp;authkey=CLWU-ssM">
+<title>Crowdsource HN: Resources for making your next website.</title>
+<link>https://docs.google.com/document/d/14Ym6LTR9hLBGI0cM0mMU_BDEKG3ysmRsakwzA5Z_Ce4/edit?hl=en&amp;authkey=CLWU-ssM</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121337"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>372c7d1864014e5b039cdb34dc3c016f</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://mindstorms.lego.com/en-us/News/ReadMore/Default.aspx?id=270052">
+<title>14-year old 1st LEGO League programmer sets off the Google Science Fair</title>
+<link>http://mindstorms.lego.com/en-us/News/ReadMore/Default.aspx?id=270052</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122574"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>c2d71b97402b9e360456705f61ce8c22</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://mashable.com/2011/01/19/startup-collecta-shuts-down-search-engine/">
+<title>Startup Collecta Shuts Down Its Product, Starts Working on a New One</title>
+<link>http://mashable.com/2011/01/19/startup-collecta-shuts-down-search-engine/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2122723"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>3a01f1b25cc81fa4856a71b9cb1dabeb</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.fsf.org/news/supporting-webm">
+<title>No double standards: supporting Google's push for WebM</title>
+<link>http://www.fsf.org/news/supporting-webm</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2119722"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>6a0f52350c8199b48c9a2a06226252f4</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://techcrunch.com/2011/01/19/evernote-mac-app-store/">
+<title>Four Lessons From Evernote&#x2019;s First Week On The Mac App Store</title>
+<link>http://techcrunch.com/2011/01/19/evernote-mac-app-store/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121888"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>0</snow:readstatus>
+<snow:hash>0c8e92e7eb042979727c15e7a22cd8fa</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://www.cnn.com/2011/TECH/innovation/01/18/sartre.platoon.road.train/index.html">
+<title>All aboard the 'road train?'</title>
+<link>http://www.cnn.com/2011/TECH/innovation/01/18/sartre.platoon.road.train/index.html</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121905"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>a4732957056f38806a4f6fef1ab550e0</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://mozillalabs.com/skywriter/2011/01/18/mozilla-skywriter-has-been-merged-into-ace/">
+<title>Mozilla Skywriter has been merged into Ace</title>
+<link>http://mozillalabs.com/skywriter/2011/01/18/mozilla-skywriter-has-been-merged-into-ace/</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2121562"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>48228f845b73332e24a4fb55f1f0bf54</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+<item rdf:about="http://hoisie.com/post/yes_browsers_do_cache_ssl_resources__so_please_use_googles_cdn">
+<title>Yes, browsers do cache SSL resources, so please use Google's CDN</title>
+<link>http://hoisie.com/post/yes_browsers_do_cache_ssl_resources__so_please_use_googles_cdn</link>
+<description>&lt;a href="http://news.ycombinator.com/item?id=2120773"&gt;Comments&lt;/a&gt;</description>
+<snow:readstatus>1</snow:readstatus>
+<snow:hash>e8b93961309a1dd7f43a44bfec6a5d01</snow:hash>
+<snow:date>0</snow:date>
+</item>
+
+</rdf:RDF>
