@@ -49,8 +49,6 @@ vim-addon-manager
 vim-doc
 vim-latexsuite
 vim-scripts
-vim-python
-vim-perl
 zathura
 nvi
 surfraw
@@ -72,8 +70,8 @@ silc
 libssl-dev
 gcl
 sbcl
-sbcl-docs
-cmucl
+sbcl-doc
+common-lisp-controller
 cmucl-docs
 slime
 mutt
@@ -99,6 +97,6 @@ eagle-data
 calcurse
 abook
 wvdial
-snownews
+nrss
 
 
