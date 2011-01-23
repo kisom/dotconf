@@ -10,7 +10,12 @@ SOURCES=/etc/apt/sources.list
 TOR="deb http://deb.torproject.org/torproject.org ${NDIST} main"
 NDIST="squeeze"
 ODIST="lenny"
-DEV_USER="kyle"
+DEV_USER="$1"
+
+if [ -z "${DEV_USER}" ]; then
+    echo "need to specify a user name!"
+    exit 1
+fi
 
 if [ ! "$UID" = "0" ]; then
     echo "requires root privileges!"
