@@ -3,8 +3,8 @@ tcpdump
 screen
 tmux
 cmus
-alsabase
-alsafirmware-loaders
+alsa-base
+alsa-firmware-loaders
 alsa-tools
 alsa-utils
 cmus-plugin-ffmpeg
