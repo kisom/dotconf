@@ -99,5 +99,8 @@ calcurse
 abook
 wvdial
 nrss
+tor
+tor-geoip
+privoxy
 
 
