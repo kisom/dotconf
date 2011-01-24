@@ -1,15 +1,47 @@
-# comment 1
+# system tools 
 sudo
-build-essential
 tcpdump
 screen
 tmux
+
+# multimedia
 cmus
 alsa-base
 alsa-firmware-loaders
 alsa-tools
 alsa-utils
 cmus-plugin-ffmpeg
+pornview
+mplayer
+vlc
+easytag
+
+# development
+build-essential
+valgrind
+libgcrypt11
+libgcrypt11-dev
+libgcrypt11-doc
+libpcre3-dev
+libssl-dev
+gcl
+sbcl
+sbcl-doc
+common-lisp-controller
+cmucl-docs
+slime
+autoconf*
+automake*
+rats
+flawfinder
+git
+gitk
+git-email
+git-doc
+github-cli
+gitmagic
+
+# python libraries
 python-all
 python2.6-doc
 python-setuptools
@@ -25,7 +57,6 @@ python-feedvalidator
 python-qt4
 python-imaging
 python-irclib
-# comment 2
 python-jabberbot
 python-impacket
 python-impacket-doc
@@ -44,9 +75,13 @@ python-ptrace
 python-numpy
 python-scipy
 python-silc
+
+# perl libs
 libnetpacket-perl
 libnet-pcap-perl
 libnet-rawip-perl
+
+# editors / doc readers
 vim-gtk
 vim-addon-manager
 vim-doc
@@ -54,58 +89,41 @@ vim-latexsuite
 vim-scripts
 zathura
 nvi
+
+# web
 surfraw
 lynx
 links
 links2
 elinks
+
+# xorg
 xorg
 x-window-manager
 fluxbox
 awesome
-valgrind
-libgcrypt11
-libgcrypt11-dev
-libgcrypt11-doc
-libpcre3-dev
+qingy
+
+# comms
 irssi
 irssi-plugin-otr
 irssi-plugin-silc
 silc
-libssl-dev
-gcl
-sbcl
-sbcl-doc
-common-lisp-controller
-cmucl-docs
-slime
 mutt
-pornview
-mplayer
-vlc
-easytag
-gnupg
-git
-gitk
-git-email
-git-doc
-github-cli
-gitmagic
 evince
+
+# security
 apg
-autoconf*
-automake*
-rats
-flawfinder
+gnupg
+tor
+tor-geoip
+privoxy
+
+# misc
 eagle
 eagle-data
 calcurse
 abook
 wvdial
 nrss
-tor
-tor-geoip
-privoxy
-qingy
 
-# comment 3
