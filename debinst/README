@@ -1,0 +1,6 @@
+package installer note:
+    * you may want to review the package list, namely:
+        * do you need the python packages?
+        * choosing a different login manager (currently qingy)
+        * choosing a different window manager (currently flux and awesome)
+

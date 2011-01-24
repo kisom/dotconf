@@ -42,7 +42,7 @@ gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 up2
 
 # install packages and ensure system is up to date
-apt-get install $(cat debian-install.txt | xargs)
+apt-get install $(cat debian-install.txt | grep -v '^#' | xargs)
 up2
 
 # change dev user's shell

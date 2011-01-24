@@ -1,3 +1,4 @@
+# comment 1
 sudo
 build-essential
 tcpdump
@@ -24,6 +25,7 @@ python-feedvalidator
 python-qt4
 python-imaging
 python-irclib
+# comment 2
 python-jabberbot
 python-impacket
 python-impacket-doc
@@ -57,6 +59,8 @@ lynx
 links
 links2
 elinks
+xorg
+x-window-manager
 fluxbox
 awesome
 valgrind
@@ -102,5 +106,6 @@ nrss
 tor
 tor-geoip
 privoxy
+qingy
 
-
+# comment 3
