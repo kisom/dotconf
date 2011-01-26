@@ -3,6 +3,9 @@ sudo
 tcpdump
 screen
 tmux
+ntpdate
+ntp
+ntp-doc
 
 # multimedia
 cmus
