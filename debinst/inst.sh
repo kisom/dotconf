@@ -28,7 +28,7 @@ if [ "$?" = "1" ]; then
 fi
 
 # track squeeze
-sed -i -e 's/${ODIST}/${NDIST}/g ; /.\+volatile.\+/d ' ${SOURCES}
+sed -i -e "s/${ODIST}/${NDIST}/g ; /.\+volatile.\+/d" ${SOURCES}
 sed -i -e 's/main/main contrib non-free/' ${SOURCES}
 
 # refresh package cache and upgrade system
@@ -62,7 +62,7 @@ rm -fr ~${DEV_USER}/.git
 
 # ensure permissions are set properly
 chown -R ${DEV_USER}:${DEV_USER} ~${DEV_USER}
-chmod u+rw,a-rw,g=r ~{DEV_USER}
+chmod u+rw,a-rw,g=r ~${DEV_USER}
 
 
 echo "POST INSTALL TASKS"
