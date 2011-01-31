@@ -56,6 +56,15 @@ export PATH PS1 TERM
 alias ls="ls --color=always"
 alias startx="nohup startx &"
 
+# git aliases
+alias gs="git status"
+alias gc="git commit -a"
+alias gpsh="git push"
+alias gpul="git pull"
+alias gco="git checkout"
+alias gf="git fetch"
+
+
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
 if [ "$(uname -s)" = "Linux" ]; then
