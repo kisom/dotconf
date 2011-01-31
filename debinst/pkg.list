@@ -6,6 +6,8 @@ tmux
 ntpdate
 ntp
 ntp-doc
+acpitool
+gnome-power-manager
 
 # multimedia
 cmus

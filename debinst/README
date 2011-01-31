@@ -3,4 +3,6 @@ package installer note:
         * do you need the python packages?
         * choosing a different login manager (currently qingy)
         * choosing a different window manager (currently flux and awesome)
+        * i use gnome-power-manager for my power management applet. you may
+        not want this.
 
