@@ -1,3 +1,6 @@
+" vimrc for great justice
+syntax on
+
 set ignorecase smartcase
 set number
 
