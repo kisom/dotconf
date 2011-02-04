@@ -27,8 +27,10 @@ Mod1 F7  :Exec xterm -geometry 81x54
 Mod1 F10 :MaximizeWindow
 
 Mod4 Return :Exec xterm
+Mod4 d   :ShowDesktop
 Mod4 r   :Exec fbrun
 Mod4 l   :Exec xscreensaver-command -lock
+Mod4 Escape :Iconify
 Shift Mod4 c :Close
 
 Control Mod1 Right :NextWorkspace
