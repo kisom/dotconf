@@ -3,7 +3,7 @@
 # update and upgrade (aka up^2)
 up2 () {
     apt-get update
-    yes | apt-get dist-upgrade
+    echo 'yy' | apt-get dist-upgrade
 }
 
 SOURCES=/etc/apt/sources.list
