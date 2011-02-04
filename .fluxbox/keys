@@ -27,9 +27,14 @@ Mod1 F7  :Exec xterm -geometry 81x54
 Mod1 F10 :MaximizeWindow
 
 Mod4 Return :Exec xterm
+Mod4 b   :Exec cmus-remote -n
+Mod4 c   :Exec cmus-remote -u
 Mod4 d   :ShowDesktop
-Mod4 r   :Exec fbrun
 Mod4 l   :Exec xscreensaver-command -lock
+Mod4 r   :Exec fbrun
+Mod4 v   :Exec cmus-remote -s
+Mod4 x   :Exec cmus-remote -p
+Mod4 z   :Exec cmus-remote -r
 Mod4 Escape :Iconify
 Shift Mod4 c :Close
 
