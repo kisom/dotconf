@@ -17,6 +17,8 @@ ksh
 wicd
 wicd-curses
 module-assistant
+picocom
+minicom
 
 # multimedia
 cmus
