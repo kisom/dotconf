@@ -17,7 +17,7 @@ if [ -z "${DEV_USER}" ]; then
     exit 1
 fi
 
-if [ ! "$UID" = "0" ]; then
+if [ "$UID" != "0" ]; then
     echo "requires root privileges!"
     exit 1
 fi

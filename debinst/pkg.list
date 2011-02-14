@@ -8,6 +8,13 @@ ntp
 ntp-doc
 acpitool
 gnome-power-manager
+thunar
+thunar-volman
+dvd+rw-tools
+zsh
+ksh
+wicd
+wicd-curses
 
 # multimedia
 cmus
@@ -20,6 +27,7 @@ pornview
 mplayer
 vlc
 easytag
+cdw
 
 # development
 build-essential
@@ -29,12 +37,6 @@ libgcrypt11-dev
 libgcrypt11-doc
 libpcre3-dev
 libssl-dev
-gcl
-sbcl
-sbcl-doc
-common-lisp-controller
-cmucl-docs
-slime
 autoconf*
 automake*
 rats
@@ -45,6 +47,16 @@ git-email
 git-doc
 github-cli
 gitmagic
+mercurial
+subversion
+cvs
+libxosd-dev
+bison
+byacc
+dbus
+gettext
+genisoimage
+exuberant-ctags
 
 # python libraries
 python-all
@@ -58,6 +70,8 @@ python-cjson
 python-coverage
 python-crypto
 python-dpkt
+python-django
+python-djago-doc
 python-feedvalidator
 python-qt4
 python-imaging
@@ -74,7 +88,6 @@ python-openssl-doc
 python-openid
 python-otr
 python-paramiko
-python-psycopg2
 python-pudb
 python-ptrace
 python-numpy
@@ -85,6 +98,113 @@ python-silc
 libnetpacket-perl
 libnet-pcap-perl
 libnet-rawip-perl
+libwww-curl-perl
+libwwwbrowser-perl
+libcrypt-ssleay-perl
+libwww-opensearch-perl
+libwww-perl
+libauthen-sasl-perl
+libauthen-simple-dbi-perl
+libauthen-simple-http-perl
+libauthen-simple-passwd-perl
+libauthen-simple-pam-perl
+libbsd-resource-perl
+libpoe-perl
+libpoe-loop-event-perl
+libpoe-filter-ircd-perl
+libpoe-filter-http-parser-perl
+libpoe-component-sslify-perl
+libpoe-component-jabber-perl
+libpoe-component-irc-perl
+libpoe-component-client-keepalive-perl
+
+# qt4 libs
+libqt4-dbus
+libqt4-designer
+libqt4-dev
+libqt4-multimedia
+libqt4-network
+libqt4-opengl
+libqt4-mysql
+libqt4-psql
+libqt4-sqlite
+python-qt4-dbg
+python-qt4-dbus
+python-qt4-doc
+python-qt4
+pythonqt4-sql
+pythonqt4-dbg
+
+
+# lisp
+plt-scheme
+plt-scheme-doc
+r5rs-doc
+r6rs-doc
+chicken-bin
+ilisp
+hashcash
+ikarus
+mit-scheme-dbg
+mit-scheme-doc
+mit-scheme
+rep
+rep-doc
+scheme2c
+scheme2c-doc
+scheme48
+scheme48-doc
+scheme9
+scm
+scsh-0.6
+scsh-0.6-doc
+
+# R
+r-base-core-dbg
+r-base-core
+r-base-dev
+r-base
+r-doc-html
+r-doc-info
+r-doc-pdf
+r-mathlib
+
+# ruby
+rails-doc
+rails
+rake
+passenger-doc
+rbbr
+rbbr-doc
+rcov
+ri
+redmine
+rubybook
+ruby-dev
+ruby-full
+ruby-elisp
+rubygems
+rubygems-doc
+libqt4-ruby
+
+# database stuff
+sqlite3
+libsqlite3-dev
+sqlite3-doc
+libmysqlclient-dev
+libpqxx-dev
+libpqxx-doc
+libpq5
+libmysql++3
+libmysql++-dev
+libmysql++-doc
+mysql-server
+mysql-client
+cl-sql-postgresql
+postgresql-client
+postgresql-server
+postgresql-doc
+python-psycopg2
 
 # editors / doc readers
 vim-gtk
@@ -94,6 +214,7 @@ vim-latexsuite
 vim-scripts
 zathura
 nvi
+emacs
 
 # web
 surfraw
@@ -101,13 +222,15 @@ lynx
 links
 links2
 elinks
+blazeblogger
+canto
 
 # xorg
 xorg
-x-window-manager
 fluxbox
 awesome
 qingy
+conky
 
 # comms
 irssi
@@ -131,4 +254,28 @@ calcurse
 abook
 wvdial
 nrss
+
+# latex
+biblatex
+texlive-base
+textlive-doc-en
+texlive-extra-utils
+texlive-fonts-extra
+texlive-fonts-recommended
+texlive-font-utils
+texlive-formats-extra
+texlive-latex3
+texlive-latex-base-doc
+texlive-latex-base
+texlive-latex-extra-doc
+texlive-latex-extra
+texlive-latex-recommended-doc
+texlive-latex-recommended
+texlive-math-extra
+texlive-pictures
+
+# webservers
+nginx-dbg
+nginx
+apache2
 
