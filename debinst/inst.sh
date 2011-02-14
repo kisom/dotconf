@@ -7,10 +7,10 @@ up2 () {
 }
 
 SOURCES=/etc/apt/sources.list
-TOR="deb http://deb.torproject.org/torproject.org ${NDIST} main"
-NDIST="squeeze"
-ODIST="lenny"
+NDIST="squeeze"   
+ODIST="squeeze"       
 DEV_USER="$1"
+TOR="deb http://deb.torproject.org/torproject.org ${NDIST} main"
 
 if [ -z "${DEV_USER}" ]; then
     echo "need to specify a user name!"
@@ -28,8 +28,10 @@ if [ "$?" = "1" ]; then
 fi
 
 # track squeeze
-sed -i -e "s/${ODIST}/${NDIST}/g ; /.\+volatile.\+/d" ${SOURCES}
-sed -i -e 's/main/main contrib non-free/' ${SOURCES}
+if [ ! "$ODIST"  = "$NDIST" ]; then 
+    sed -i -e "s/${ODIST}/${NDIST}/g ; /.\+volatile.\+/d" ${SOURCES}
+    sed -i -e 's/main/main contrib non-free/' ${SOURCES}
+fi
 
 # refresh package cache and upgrade system
 up2

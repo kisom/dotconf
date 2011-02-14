@@ -6,6 +6,7 @@ tmux
 ntpdate
 ntp
 ntp-doc
+rsync
 acpitool
 gnome-power-manager
 thunar
@@ -15,6 +16,7 @@ zsh
 ksh
 wicd
 wicd-curses
+module-assistant
 
 # multimedia
 cmus
@@ -57,6 +59,8 @@ dbus
 gettext
 genisoimage
 exuberant-ctags
+sloccount
+dev-scripts
 
 # python libraries
 python-all
@@ -206,6 +210,43 @@ postgresql-server
 postgresql-doc
 python-psycopg2
 
+# erlang
+erlang
+erlang-asn1
+erlang-base
+erlang-crypto
+erlang-doc
+erlang-edoc
+erlang-et
+erlang-eunit
+erlang-examples
+erlang-gs
+erlang-inets
+erlang-invisio
+erlang-manpages
+erlang-mode
+erlang-observer
+erlang-odbc
+erlang-pman
+erlang-percept
+erlang-public-key
+erlang-reltool
+erlang-runtime-tools
+erlang-src
+erlang-ssh
+erlang-ssl
+erlang-test-server
+erlang-webtool
+erlang-x11
+erlang-yaws
+
+# haskell
+ghc6-doc
+ghc6
+haskell98-tutorial
+haskell98-report
+haskell-doc
+
 # editors / doc readers
 vim-gtk
 vim-addon-manager
@@ -215,6 +256,7 @@ vim-scripts
 zathura
 nvi
 emacs
+pandoc
 
 # web
 surfraw
@@ -236,6 +278,8 @@ conky
 irssi
 irssi-plugin-otr
 irssi-plugin-silc
+irssi-dev
+irssi-plugin-xmpp
 silc
 mutt
 evince
@@ -278,4 +322,45 @@ texlive-pictures
 nginx-dbg
 nginx
 apache2
+yaws
+yaws-wiki
+yaws-doc
+
+# security tools
+dsniff
+nmap
+ettercap
+dsniff
+driftnet
+scapy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
