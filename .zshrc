@@ -1,4 +1,5 @@
 sudo -k                 # nuke sudo privs
+set -o noclobber
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
@@ -57,12 +58,12 @@ alias ls="ls --color=always"
 alias startx="nohup startx &"
 
 # git aliases
-alias gs="git status"
-alias gc="git commit -a"
-alias gpsh="git push"
-alias gpul="git pull"
-alias gco="git checkout"
-alias gf="git fetch"
+alias st="git status"
+alias commit="git commit -a"
+alias push="git push"
+alias pull="git pull"
+alias co="git checkout"
+alias fetch="git fetch"
 
 
 # compensate for a braindead linux package manager
