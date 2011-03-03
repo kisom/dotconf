@@ -1,0 +1,11 @@
+Mrxvt.foreground: green
+Mrxvt.transparent: True
+Mrxvt.transparentMenubar: True
+Mrxvt.transparentScrollbar: True
+Mrxvt.transparentTabbar: True
+Mrxvt.backgroundFade: 50
+Mrxvt.xft: True
+Mrxvt.xftFont: DejaVu Sans Mono
+Mrxvt.xftSize: 9
+
+

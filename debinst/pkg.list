@@ -62,7 +62,7 @@ gettext
 genisoimage
 exuberant-ctags
 sloccount
-dev-scripts
+#dev-scripts
 
 # python libraries
 python-all
@@ -77,7 +77,7 @@ python-coverage
 python-crypto
 python-dpkt
 python-django
-python-djago-doc
+python-django-doc
 python-feedvalidator
 python-qt4
 python-imaging
@@ -124,23 +124,6 @@ libpoe-component-jabber-perl
 libpoe-component-irc-perl
 libpoe-component-client-keepalive-perl
 
-# qt4 libs
-libqt4-dbus
-libqt4-designer
-libqt4-dev
-libqt4-multimedia
-libqt4-network
-libqt4-opengl
-libqt4-mysql
-libqt4-psql
-libqt4-sqlite
-python-qt4-dbg
-python-qt4-dbus
-python-qt4-doc
-python-qt4
-pythonqt4-sql
-pythonqt4-dbg
-
 
 # lisp
 plt-scheme
@@ -150,10 +133,6 @@ r6rs-doc
 chicken-bin
 ilisp
 hashcash
-ikarus
-mit-scheme-dbg
-mit-scheme-doc
-mit-scheme
 rep
 rep-doc
 scheme2c
@@ -162,8 +141,8 @@ scheme48
 scheme48-doc
 scheme9
 scm
-scsh-0.6
-scsh-0.6-doc
+#scsh-0.6
+#scsh-0.6-doc
 
 # R
 r-base-core-dbg
@@ -181,7 +160,7 @@ rails
 rake
 passenger-doc
 rbbr
-rbbr-doc
+#rbbr-doc-html
 rcov
 ri
 redmine
@@ -207,9 +186,6 @@ libmysql++-doc
 mysql-server
 mysql-client
 cl-sql-postgresql
-postgresql-client
-postgresql-server
-postgresql-doc
 python-psycopg2
 
 # erlang
@@ -217,14 +193,13 @@ erlang
 erlang-asn1
 erlang-base
 erlang-crypto
-erlang-doc
+#erlang-doc-html
 erlang-edoc
 erlang-et
 erlang-eunit
 erlang-examples
 erlang-gs
 erlang-inets
-erlang-invisio
 erlang-manpages
 erlang-mode
 erlang-observer
@@ -240,7 +215,6 @@ erlang-ssl
 erlang-test-server
 erlang-webtool
 erlang-x11
-erlang-yaws
 
 # haskell
 ghc6-doc
@@ -270,11 +244,13 @@ blazeblogger
 canto
 
 # xorg
-xorg
+xserver-xorg
+xserver-xorg-core
 fluxbox
 awesome
 qingy
 conky
+
 
 # comms
 irssi
@@ -289,8 +265,6 @@ evince
 # security
 apg
 gnupg
-tor
-tor-geoip
 privoxy
 
 # misc
@@ -304,7 +278,7 @@ nrss
 # latex
 biblatex
 texlive-base
-textlive-doc-en
+texlive-doc-en
 texlive-extra-utils
 texlive-fonts-extra
 texlive-fonts-recommended
@@ -334,7 +308,7 @@ nmap
 ettercap
 dsniff
 driftnet
-scapy
+python-scapy
 
 
 

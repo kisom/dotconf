@@ -1,11 +1,18 @@
 #!/bin/sh
 
+instpkglist() {
+	
+	export PACKAGES=$(cat pkg.list | sed -e '/^[ \t]*$/D ; /^\#.*/D' | xargs)
+	sudo	apt-get install ${PACKAGES}
+}
+
 # update and upgrade (aka up^2)
 up2 () {
     apt-get update
     echo 'yy' | apt-get dist-upgrade
 }
 
+main() {
 SOURCES=/etc/apt/sources.list
 NDIST="squeeze"   
 ODIST="squeeze"       
@@ -41,11 +48,11 @@ echo ${TOR} >> ${SOURCES}
 gpg --keyserver keys.gnupg.net --recv 886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 
+PACKAGES=$(cat pkg.list | sed -e '/^[ \t]*$/D ; /^\#.*/D' | xargs)
+apt-get install $(${PACKAGES})
 up2
 
 # install packages and ensure system is up to date
-PACKAGES=$(cat pkg.list | sed -e '/^[ \t]*$/D ; /^\#.*/D' | xargs)
-apt-get install $(${PACKAGES})
 up2
 
 # change dev user's shell
@@ -70,3 +77,6 @@ chmod u+rw,a-rw,g=r ~${DEV_USER}
 echo "POST INSTALL TASKS"
 echo "* visudo"
 echo "* user gen pubkey -> github"
+}
+
+
