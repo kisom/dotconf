@@ -23,7 +23,7 @@ if [ -z "$(grep "not found" $(which surfraw))" -a -x $(which surfraw 2>/dev/null
 fi
 
 if [ -d ${HOME}/bin ]; then
-    PATH=${PATH}:${HOME}/bin
+    PATH=${HOME}/bin:${PATH}
 fi
 
 if [ -d ${HOME}/scripts ]; then
@@ -31,7 +31,7 @@ if [ -d ${HOME}/scripts ]; then
 fi
 
 
-PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin
+PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin:/usr/games
 
 # append 9base path to end of path
 if [ -d /usr/lib/9base ]; then
@@ -50,6 +50,15 @@ if [[ "$TERM" = "xterm" ]]; then
     TERM="xterm-color"
 fi
 
+# RStudio
+if [ -d /usr/lib/rstudio/bin ]; then
+    PATH=${PATH}:/usr/lib/rstudio/bin
+fi
+
+# games
+if [ -d /usr/games ]; then
+    PATH=${PATH}:/usr/games
+fi
 
 export PATH PS1 TERM
 
@@ -59,12 +68,14 @@ alias startx="nohup startx &"
 
 # git aliases
 alias st="git status"
-alias commit="git commit -a"
+alias ga="git add"
+alias commita="git commit -a"
+alias commit="git commit"
+alias partial="git add -p"
 alias push="git push"
 alias pull="git pull"
 alias co="git checkout"
 alias fetch="git fetch"
-
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
