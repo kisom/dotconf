@@ -76,6 +76,7 @@ alias push="git push"
 alias pull="git pull"
 alias co="git checkout"
 alias fetch="git fetch"
+alias gd="git diff"
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
