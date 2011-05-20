@@ -27,3 +27,4 @@ set confirm
 " misc
 set ruler
 
+syntax on
