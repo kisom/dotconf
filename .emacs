@@ -18,7 +18,7 @@
     (add-to-list 'load-path "/usr/share/doc/git/contrib/emacs")
     (require 'git)
     (require 'git-blame)
-    (require 'magit
+    (require 'magit)
 
 ;; -----------------------------------------------------------------------------
 ;; colour scheme 
@@ -40,6 +40,14 @@
 ;; -----------------------------------------------------------------------------
     (setq user-mail-address "coder@kyleisom.net")
     (setq explicit-shell-file-name "/bin/zsh")
-    (column-number-mode 1)
-    (display-time)
+    (setq column-number-mode 1)
+    (setq display-time 1)
 
+;; -----------------------------------------------------------------------------
+;; do vm setup
+;; -----------------------------------------------------------------------------
+     (setq vm-primary-inbox 
+        "imap-ssl:imap.gmail.com:993:inbox:login:coder@kyleisom.net:*")
+    (add-to-list 'auto-mode-alist '("\\.mbox$" . vm-mode))
+    (setq mail-user-agent 'vm-user-agent)
+    (setq vm-auto-get-new-mail 15)
