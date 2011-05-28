@@ -18,6 +18,7 @@
     (add-to-list 'load-path "/usr/share/doc/git/contrib/emacs")
     (require 'git)
     (require 'git-blame)
+    (require 'magit)
 
 ;; -----------------------------------------------------------------------------
 ;; colour scheme 
@@ -47,7 +48,6 @@
 ;; -----------------------------------------------------------------------------
 ;; set column mode
 ;; -----------------------------------------------------------------------------
-     (setq column-number-mode t)
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -61,4 +61,21 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#002b36" :foreground "#839496" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "LMMono9")))))
+ '(default ((t (:inherit nil :stipple nil :background "#002b36" 
+                :foreground "#839496" :inverse-video nil :box nil 
+                :strike-through nil :overline nil :underline nil :slant normal 
+                :weight normal :height 120 :width normal :foundry "unknown" 
+                :family "LMMono9")))))
+    (setq user-mail-address "coder@kyleisom.net")
+    (setq explicit-shell-file-name "/bin/zsh")
+    (setq column-number-mode 1)
+    (setq display-time 1)
+
+;; -----------------------------------------------------------------------------
+;; do vm setup
+;; -----------------------------------------------------------------------------
+     (setq vm-primary-inbox 
+        "imap-ssl:imap.gmail.com:993:inbox:login:coder@kyleisom.net:*")
+    (add-to-list 'auto-mode-alist '("\\.mbox$" . vm-mode))
+    (setq mail-user-agent 'vm-user-agent)
+    (setq vm-auto-get-new-mail 15)
