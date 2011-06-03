@@ -1,0 +1,13 @@
+[ui]
+editor = vim
+username = Kyle Isom <coder@kyleisom.net>
+
+[extensions]
+bookmarks=
+color=
+eol=
+git=
+graphlog=
+pager=
+progress=
+
