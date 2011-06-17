@@ -78,6 +78,9 @@ alias co="git checkout"
 alias fetch="git fetch"
 alias gd="git diff"
 
+# emacsclient alias
+alias em='emacsclient -n -c -a "" '
+
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
 if [ "$(uname -s)" = "Linux" ]; then

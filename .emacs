@@ -2,9 +2,10 @@
 ;; basic .emacs file                                                          ;;
 ;;----------------------------------------------------------------------------;;
 ;; i only use emacs for OCaml, scheme and clisp, so there isn't much here.    ;;
-;;                                                              - kyle        ;;
+;;                                                              - kisom        ;;
 ;;----------------------------------------------------------------------------;;
 
+ (server-start)
 ;; -----------------------------------------------------------------------------
 ;; tuareg-mode for OCaml support
 ;; -----------------------------------------------------------------------------
@@ -26,7 +27,7 @@
     (add-to-list 'load-path 
                  "/usr/share/emacs/site-lisp/emacs-goodies-el/color-theme.el")
     (add-to-list 'load-path 
-                 "/home/kyle/code/altercation-solarized/emacs-colors-solarized")
+                 "/home/kisom/code/altercation-solarized/emacs-colors-solarized")
     (require 'color-theme)
     (require 'color-theme-solarized)
     (eval-after-load "color-theme"
@@ -54,19 +55,15 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(column-number-mode t)
-
+ '(inhibit-startup-screen t)
  '(transient-mark-mode (quote (only . t))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#002b36" 
-                :foreground "#839496" :inverse-video nil :box nil 
-                :strike-through nil :overline nil :underline nil :slant normal 
-                :weight normal :height 120 :width normal :foundry "unknown" 
-                :family "LMMono9")))))
-    (setq user-mail-address "coder@kyleisom.net")
+ '(default ((t (:inherit nil :stipple nil :background "#002b36" :foreground "#839496" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "LMMono9")))))
+    (setq user-mail-address "coder@kisomisom.net")
     (setq explicit-shell-file-name "/bin/zsh")
     (setq column-number-mode 1)
     (setq display-time 1)
@@ -75,7 +72,7 @@
 ;; do vm setup
 ;; -----------------------------------------------------------------------------
      (setq vm-primary-inbox 
-        "imap-ssl:imap.gmail.com:993:inbox:login:coder@kyleisom.net:*")
+        "imap-ssl:imap.gmail.com:993:inbox:login:coder@kisomisom.net:*")
     (add-to-list 'auto-mode-alist '("\\.mbox$" . vm-mode))
     (setq mail-user-agent 'vm-user-agent)
     (setq vm-auto-get-new-mail 15)
