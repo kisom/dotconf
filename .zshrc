@@ -18,9 +18,6 @@ unsetopt autocd beep extendedglob notify
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-if [ -z "$(grep "not found" $(which surfraw))" -a -x $(which surfraw 2>/dev/null) ] ; then
-   PATH=${PATH}:$(dirname $(which surfraw) | sed s/bin/lib\\/surfraw/)
-fi
 
 if [ -d ${HOME}/bin ]; then
     PATH=${HOME}/bin:${PATH}
@@ -30,6 +27,21 @@ if [ -d ${HOME}/scripts ]; then
     PATH=${PATH}:${HOME}/scripts
 fi
 
+# OS X-specific paths
+if [ "$(uname -s)" = "Darwin" ]; then
+    if [ -x ${HOME}/Code/pymods ]; then
+        PYTHONPATH=${PYTHONPATH}:${HOME}/Code/pymods
+        export PYTHONPATH
+    fi
+fi
+
+# Linux-specific paths
+if [ "$(uname -s)" = "Linux" ]; then
+    if [ -x ${HOME}/code/pymods ]; then
+        PYTHONPATH=${PYTHONPATH}:${HOME}/code/pymods
+        export PYTHONPATH
+    fi
+fi
 
 PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin:/usr/games
 
@@ -63,7 +75,6 @@ fi
 export PATH PS1 TERM
 
 # aliases
-alias ls="ls --color=always"
 alias startx="nohup startx &"
 
 # git aliases
