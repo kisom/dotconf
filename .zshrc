@@ -1,10 +1,11 @@
 sudo -k                 # nuke sudo privs
 set -o noclobber
+EDITOR=emacs
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=** l:|=*'
-zstyle :compinstall filename '/home/kisom/.zshrc'
+zstyle :compinstall filename '/Users/kisom/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -18,10 +19,7 @@ unsetopt autocd beep extendedglob notify
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-if [ -z "$(grep "not found" $(which surfraw))" -a -x $(which surfraw 2>/dev/null) ] ; then
-   PATH=${PATH}:$(dirname $(which surfraw) | sed s/bin/lib\\/surfraw/)
-fi
-
+PATH=/usr/local/bin:${PATH}
 if [ -d ${HOME}/bin ]; then
     PATH=${HOME}/bin:${PATH}
 fi
@@ -30,6 +28,21 @@ if [ -d ${HOME}/scripts ]; then
     PATH=${PATH}:${HOME}/scripts
 fi
 
+# OS X-specific paths
+if [ "$(uname -s)" = "Darwin" ]; then
+    if [ -x ${HOME}/Code/pymods ]; then
+        PYTHONPATH=${PYTHONPATH}:${HOME}/Code/pymods:/Library/Python/2.7/site-packages
+        export PYTHONPATH
+    fi
+fi
+
+# Linux-specific paths
+if [ "$(uname -s)" = "Linux" ]; then
+    if [ -x ${HOME}/code/pymods ]; then
+        PYTHONPATH=${PYTHONPATH}:${HOME}/code/pymods
+        export PYTHONPATH
+    fi
+fi
 
 PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin:/usr/games
 
@@ -60,15 +73,18 @@ if [ -d /usr/games ]; then
     PATH=${PATH}:/usr/games
 fi
 
+# texworks
+if [ -d /usr/texbin ]; then
+    PATH=${PATH}:/usr/texbin
+fi
+
 export PATH PS1 TERM
 
 # aliases
-alias ls="ls --color=always"
 alias startx="nohup startx &"
 
 # git aliases
 alias st="git status"
-alias stc="git status -uno"
 alias ga="git add"
 alias commita="git commit -a"
 alias commit="git commit"
@@ -78,6 +94,10 @@ alias pull="git pull"
 alias co="git checkout"
 alias fetch="git fetch"
 alias gd="git diff"
+
+if [ -x ~/.vim/autoload/pathogen.vim ]; then
+    function pathogen_install() { cp -r $1 ~/.vim/bundles/ }
+fi
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
