@@ -27,13 +27,11 @@
        comint-input-ring-size (string-to-number (or (getenv  
     "HISTSIZE") "100")))
 
-
+    (load (expand-file-name "~/.emacs.d/site-lisp/python-pylint.el"))
+    (load (expand-file-name "~/.emacs.d/site-lisp/python-pep8.el"))
     (add-to-list 'interpreter-mode-alist '("ipython" . python-mode))
     (setq py-python-command-args '("-pylab" "-colors" "LightBG"))
 
-    (autoload 'python-pylint "python-pylint")
-    (autoload 'pylint "python-pylint")
-
-    (autoload 'python-pep8 "python-pep8")
-    (autoload 'pep8 "python-pep8")
+    (require 'python-pylint)
+    (require 'python-pep8)
 
