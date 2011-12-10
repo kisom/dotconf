@@ -80,18 +80,15 @@ fi
 
 export PATH PS1 TERM
 
+# grab my baller source control commands
+source ~/.sourceconrc
+
 # aliases
 alias startx="nohup startx &"
-
-# git aliases
-alias st="git status"
-alias ga="git add"
-alias commita="git commit -a"
-alias commit="git commit"
+alias st="status"
+alias ga="add"
 alias partial="git add -p"
-alias push="git push"
-alias pull="git pull"
-alias co="git checkout"
+alias co="checkout"
 alias fetch="git fetch"
 alias gd="git diff"
 
