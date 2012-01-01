@@ -31,7 +31,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-set relativenumber
+set number
 set undofile
 set encoding=utf-8
 

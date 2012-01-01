@@ -28,12 +28,9 @@ not_a_repo () {
 
 pull () {
     repo_type=$(get_repo_type)
-    echo "repo type: $repo_type"
     if [ "1" = "$repo_type" ]; then
-        echo "git pull $@"
         git pull $@
     elif [ "2" = "$repo_type" ]; then
-        echo "hg pull $@"
         hg pull $@
     else
         not_a_repo
@@ -43,10 +40,8 @@ pull () {
 push () {
     repo_type=$(get_repo_type)
     if [ "1" = "$repo_type" ]; then
-        echo "git push $@"
         git push $@
     elif [ "2" = "$repo_type" ]; then
-        echo "hg push $@"
         hg push $@
     else
         not_a_repo
@@ -56,10 +51,8 @@ push () {
 status () {
     repo_type=$(get_repo_type)
     if [ "1" = "$repo_type" ]; then
-        echo "git status $@"
         git status $@
     elif [ "2" = "$repo_type" ]; then
-        echo "hg status $@"
         hg status $@
     else
         not_a_repo
@@ -69,10 +62,8 @@ status () {
 commit () {
     repo_type=$(get_repo_type)
     if [ "1" = "$repo_type" ]; then
-        echo "git commit $@"
         git commit $@
     elif [ "2" = "$repo_type" ]; then
-        echo "hg commit $@"
         hg commit $@
     else
         not_a_repo
@@ -81,16 +72,14 @@ commit () {
 
 
 st () {
-    status
+    status $@
 }
 
 add () {
     repo_type=$(get_repo_type)
     if [ "1" = "$repo_type" ]; then
-        echo "git add $@"
         git add $@
     elif [ "2" = "$repo_type" ]; then
-        echo "hg add $@"
         hg add $@
     else
         not_a_repo
@@ -110,6 +99,65 @@ fetch () {
     fi
 }
 
+clog () {
+    repo_type=$(get_repo_type)
+    if [ "1" = "$repo_type" ]; then
+        git log $@
+    elif [ "2" = "$repo_type" ]; then
+        hg log $@ | less
+    else
+        not_a_repo
+    fi
+}
 
+checkout () {
+    repo_type=$(get_repo_type)
+    if [ "1" = "$repo_type" ]; then
+        git checkout $@
+    elif [ "$2" = "$repo_type" ]; then
+        hg checkout $@
+    else
+        not_a_repo
+    fi
+}
+
+co () {
+    checkout $@
+}
+
+which_dvcs () {
+    repo_type=$(get_repo_type)
+    if [ "1" = "$repo_type" ]; then
+        echo "git"
+    elif [ "2" = "$repo_type" ]; then
+        echo "mercurial"
+    else
+        not_a_repo
+    fi
+}
+
+vcdiff () {
+    repo_type=$(get_repo_type)
+    if [ "1" = "$repo_type" ]; then
+        git diff $@
+    elif [ "2" = "$repo_type" ]; then
+        hg diff $@ | less
+    else
+        not_a_repo
+    fi
+}
+
+vcshelp () {
+    echo "supported commands:"
+    echo "\tcommit"
+    echo "\tadd"
+    echo "\tpull"
+    echo "\tpush"
+    echo "\tcheckout"
+    echo "\tfetch"
+    echo "\tclog"
+    echo "\twhich_dvcs"
+    echo "\tvcdiff"
+}
 
 # suck it trebek
