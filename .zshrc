@@ -53,7 +53,7 @@ elif [ -d /usr/local/lib/9base ]; then
     PATH=${PATH}:/usr/local/lib/9base/bin
 fi
 
-PS1="<`hostname -s`: %~> $ "
+PS1="<`hostname -s`: %~> λ "
 
 if [ -x /usr/bin/Esetroot -o -x /usr/local/bin/Esetroot ]; then
     export wpsetters=Esetroot
@@ -78,10 +78,19 @@ if [ -d /usr/texbin ]; then
     PATH=${PATH}:/usr/texbin
 fi
 
+# clojure
+if [ -e /usr/local/bin/clj ]; then
+    export CLASSPATH=${CLASSPATH}:${HOME}/.lein/plugins
+fi
+
 export PATH PS1 TERM
 
 # grab my baller source control commands
 source ${HOME}/.sourcecon.zsh
+
+if [ "$(uname -s)" = "Darwin" ]; then
+    source ${HOME}/.macos.zsh
+fi
 
 # aliases
 alias startx="nohup startx &"
