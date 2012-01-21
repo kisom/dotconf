@@ -92,6 +92,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
     source ${HOME}/.macos.zsh
 fi
 
+# the rvm init takes up time so i only load it when i need it
 if [ -d "${HOME}/.rvm" ]; then
     source ${HOME}/.init_rvm.zsh
 fi
