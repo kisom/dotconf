@@ -97,15 +97,6 @@ if [ -d "${HOME}/.rvm" ]; then
     source ${HOME}/.init_rvm.zsh
 fi
 
-# aliases
-alias startx="nohup startx &"
-alias st="status"
-alias ga="add"
-alias partial="git add -p"
-alias co="checkout"
-alias fetch="git fetch"
-alias gd="git diff"
-
 if [ -x ~/.vim/autoload/pathogen.vim ]; then
     function pathogen_install() { cp -r $1 ~/.vim/bundles/ }
 fi
@@ -116,6 +107,4 @@ if [ "$(uname -s)" = "Linux" ]; then
     alias pkg_add="apt-get install"
     alias pkg_find="apt-cache search"
 fi
-
-
 

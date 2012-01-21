@@ -1,3 +1,2 @@
-set gfn=Monospace\ 9
-colorscheme koehler 
-set lines=38 columns=80
+set gfn=Inconsolata\ Medium\ 9
+set lines=48 columns=80
