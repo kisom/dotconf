@@ -92,6 +92,10 @@ if [ "$(uname -s)" = "Darwin" ]; then
     source ${HOME}/.macos.zsh
 fi
 
+if [ -d "${HOME}/.rvm" ]; then
+    source ${HOME}/.init_rvm.zsh
+fi
+
 # aliases
 alias startx="nohup startx &"
 alias st="status"
@@ -111,4 +115,6 @@ if [ "$(uname -s)" = "Linux" ]; then
     alias pkg_add="apt-get install"
     alias pkg_find="apt-cache search"
 fi
+
+
 
