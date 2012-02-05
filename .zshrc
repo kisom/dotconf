@@ -28,9 +28,10 @@ if [ -d ${HOME}/scripts ]; then
     PATH=${PATH}:${HOME}/scripts
 fi
 
-# OS X-specific paths
+# OS X-specific paths - includes support for homebrew pymods and my own pymods
 if [ "$(uname -s)" = "Darwin" ]; then
     if [ -x ${HOME}/Code/pymods ]; then
+        PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
         PYTHONPATH=${PYTHONPATH}:${HOME}/Code/pymods:/Library/Python/2.7/site-packages
         export PYTHONPATH
     fi
@@ -112,6 +113,14 @@ if [ "$?" = "0" ]; then
         youtube-dl -t $url
     }
 fi
+
+plint () {
+    if [ "g" = "$1" -a ! -z "$2" ]; then
+        pylint $2 2>/dev/null | grep "code has been rated"
+    else
+        pylint $1 | less
+    fi
+}
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
