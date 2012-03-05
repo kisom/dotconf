@@ -96,6 +96,7 @@ fi
 # the rvm init takes up time so i only load it when i need it
 if [ -d "${HOME}/.rvm" ]; then
     source ${HOME}/.init_rvm.zsh
+    init_rvm
 fi
 
 if [ -x ~/.vim/autoload/pathogen.vim ]; then
@@ -121,6 +122,12 @@ plint () {
         pylint $1 | less
     fi
 }
+
+# VBoxManage presupposes VBoxHeadless...
+which VboxManage 2>/dev/null 1>/dev/null
+if [ "$?" = 0 ]; then
+    source ~/.virtualbox.zsh
+fi
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system

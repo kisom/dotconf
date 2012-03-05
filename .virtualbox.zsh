@@ -6,7 +6,7 @@ vmup () {
         return
     fi
  
-    nohup VBoxHeadless -s "$1" &
+    (nohup VBoxHeadless -s "$1") &
 }
 
 vmdown () {
@@ -40,4 +40,6 @@ vmkill () {
     VBoxManage controlvm "$1" poweroff
 }
 
-
+vmhelp () {
+    echo 'vmup, vmdown, vmls, vmsrun, vmsuspend, vmkill'
+}

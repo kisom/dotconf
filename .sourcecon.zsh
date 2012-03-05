@@ -4,20 +4,20 @@
 # i made them functions so they do the Right Thing (c) whether git or
 # mercurial.
 
-
+# repo types:
+#      0	not a repo
+#      1	git
+#      2	mercurial
 get_repo_type () {
     git status 2>/dev/null 1>/dev/null
     if [ 0 -eq $? ]; then
         echo 1
-        return 1
     else
         hg status 2>/dev/null 1>/dev/null
         if [ 0 -eq $? ]; then
             echo 2
-            return 2
         else
             echo 0
-            return 0
         fi
     fi
 }
@@ -72,7 +72,14 @@ commit () {
 
 
 st () {
-    status $@
+    repo_type=$(get_repo_type)
+    if [ "1" = "$repo_type" ]; then
+        git status -uno $@
+    elif [ "2" = "$repo_type" ]; then
+        hg status -mard $@
+    else
+        not_a_repo
+    fi
 }
 
 add () {

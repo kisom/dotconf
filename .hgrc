@@ -7,6 +7,7 @@ bookmarks=
 color=
 eol=
 git=~/.mercurial/hg-git/hggit
+hgext.convert=
 graphlog=
 pager=
 progress=
