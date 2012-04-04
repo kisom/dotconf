@@ -34,3 +34,17 @@ set number
 set undofile
 set encoding=utf-8
 
+""""""""""""""""""
+" from conformal "
+""""""""""""""""""
+" show KNF violations
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.*/
+let c_space_errors=1
+
+" line
+set cinoptions=:0,t0,+4,(4
+
+" enable Man command
+source /usr/local/share/vim/vim73/ftplugin/man.vim
+
