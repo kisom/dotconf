@@ -55,6 +55,7 @@ elif [ -d /usr/local/lib/9base ]; then
 fi
 
 PS1="<`hostname -s`: %~> λ "
+PS1="<`hostname -s`: %~> $ "
 
 if [ -x /usr/bin/Esetroot -o -x /usr/local/bin/Esetroot ]; then
     export wpsetters=Esetroot
@@ -82,6 +83,11 @@ fi
 # clojure
 if [ -e /usr/local/bin/clj ]; then
     export CLASSPATH=${CLASSPATH}:${HOME}/.lein/plugins
+fi
+
+# fix for st on FreeBSD
+if [ "x$TERM" = "xst-256color" ]; then
+    TERM="xterm"
 fi
 
 export PATH PS1 TERM
