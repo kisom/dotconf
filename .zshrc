@@ -45,6 +45,14 @@ if [ "$(uname -s)" = "Linux" ]; then
     fi
 fi
 
+# OpenBSD-specific paths
+if [ "$(uname -s)" = "OpenBSD" ]; then
+    # JDK support
+    if [ -x /usr/local/jdk* ]; then
+        PATH=${PATH}:/usr/local/$(ls -1 /usr/local/ | grep jdk | xargs | sed -e 's/ /:/g')/bin
+    fi
+fi
+
 PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin:/usr/games
 
 # append 9base path to end of path
@@ -93,7 +101,7 @@ fi
 export PATH PS1 TERM
 
 # grab my baller source control commands
-source ${HOME}/.sourcecon.zsh
+source ${HOME}/.sourcecon.sh
 
 if [ "$(uname -s)" = "Darwin" ]; then
     source ${HOME}/.macos.zsh
@@ -142,3 +150,4 @@ if [ "$(uname -s)" = "Linux" ]; then
     alias pkg_find="apt-cache search"
 fi
 
+export LC_TYPE=en_US.UTF-8
