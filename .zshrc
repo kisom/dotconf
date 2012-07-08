@@ -28,6 +28,10 @@ if [ -d ${HOME}/scripts ]; then
     PATH=${PATH}:${HOME}/scripts
 fi
 
+if [ -d ${HOME}/.cabal/bin ]; then
+    PATH=${PATH}:${HOME}/.cabal/bin
+fi
+
 # OS X-specific paths - includes support for homebrew pymods and my own pymods
 if [ "$(uname -s)" = "Darwin" ]; then
     if [ -x ${HOME}/Code/pymods ]; then
@@ -47,6 +51,10 @@ fi
 
 # OpenBSD-specific paths
 if [ "$(uname -s)" = "OpenBSD" ]; then
+    export LC_CTYPE=en_US.UTF-8
+    export GTK_IM_MODULE=xim
+    export LESSCHARSET=utf-8
+    
     # JDK support
     if [ -x /usr/local/jdk* ]; then
         PATH=${PATH}:/usr/local/$(ls -1 /usr/local/ | grep jdk | xargs | sed -e 's/ /:/g')/bin
@@ -151,3 +159,5 @@ if [ "$(uname -s)" = "Linux" ]; then
 fi
 
 export LC_TYPE=en_US.UTF-8
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

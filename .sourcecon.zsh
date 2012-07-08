@@ -167,4 +167,31 @@ vcshelp () {
     echo "\tvcdiff"
 }
 
+git-dump () {
+    if [ -z "$1" ]; then
+        return
+    fi
+
+    branch="$(git status | head -n 1 | awk '{ print $4; }')"
+    echo "[+] bundling $branch/HEAD to $1"
+    echo
+
+    git bundle create $1 $branch
+
+    filesize="$(ls -lh $1 | awk '{print $5;}' | sed -e '/^$/d')"
+    echo
+    echo "[+] created $1 at $filesize."
+}
+
+git-restore () {
+    if [ -z "$1" ]; then
+        return
+    fi
+
+    branch="$(git status | head -n 1 | awk '{ print $4; }')"
+    git remote add bundle $1
+    git pull bundle $branch
+}
+
+
 # suck it trebek
