@@ -46,5 +46,5 @@ let c_space_errors=1
 set cinoptions=:0,t0,+4,(4
 
 " enable Man command
-source /usr/local/share/vim/vim73/ftplugin/man.vim
+"source /usr/local/share/vim/vim73/ftplugin/man.vim
 
