@@ -31,7 +31,7 @@ set background=dark
 colorscheme solarized
 
 set number
-set undofile
+"set undofile
 set encoding=utf-8
 
 """"""""""""""""""

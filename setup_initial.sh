@@ -28,7 +28,7 @@ link_file .zshrc
 link_file .sourcecon.sh
 link_file .macos.zsh
 link_file .vimrc
-link_file .emacs.d
+#link_file .emacs.d
 link_file .hgrc
 
 
