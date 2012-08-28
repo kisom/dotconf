@@ -13,12 +13,12 @@ if [ -z $code_dir ]; then
     fi
 fi
 
-code_dir="${code_dir}/dotconf"
+code_dir="${code_dir}/config/dotconf"
 
 link_file () {
     if [ -h ${HOME}/$1 -o -e ~/$1 ]; then
         echo "$1 already linked!"
-        return 1
+	rm ~/$1
     fi
     echo "linking ${code_dir}/$1 to ${HOME}/$1"
     ln -s ${code_dir}/$1 ${HOME}/$1
