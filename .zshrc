@@ -151,6 +151,12 @@ if [ "$?" = 0 ]; then
     source ~/.virtualbox.zsh
 fi
 
+# GoCode
+which go 1>/dev/null 2>/dev/null
+if [ "$?" = 0 ]; then
+    export GOPATH=${HOME}/code/go
+fi
+
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
 if [ "$(uname -s)" = "Linux" ]; then
@@ -160,4 +166,6 @@ fi
 
 export LC_TYPE=en_US.UTF-8
 
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
