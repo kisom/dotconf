@@ -155,6 +155,7 @@ fi
 which go 1>/dev/null 2>/dev/null
 if [ "$?" = 0 ]; then
     export GOPATH=${HOME}/code/go
+    export PATH=${PATH}:${HOME}/code/go/bin
 fi
 
 # compensate for a braindead linux package manager
@@ -167,5 +168,4 @@ fi
 export LC_TYPE=en_US.UTF-8
 
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
+export PATH
