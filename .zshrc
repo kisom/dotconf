@@ -156,7 +156,14 @@ which go 1>/dev/null 2>/dev/null
 if [ "$?" = 0 ]; then
     export GOPATH=${HOME}/code/go
     export PATH=${PATH}:${HOME}/code/go/bin
+    source ~/.go.sh
 fi
+
+# plan9 from userland
+if [ -d "${HOME}/src/plan9" ]; then
+        PLAN9=/home/kyle/src/plan9 export PLAN9
+        export PATH=$PATH:$PLAN9/bin
+    fi
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
