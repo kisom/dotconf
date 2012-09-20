@@ -161,7 +161,7 @@ fi
 
 # plan9 from userland
 if [ -d "${HOME}/src/plan9" ]; then
-        PLAN9=/home/kyle/src/plan9 export PLAN9
+        PLAN9=${HOME}/src/plan9 export PLAN9
         export PATH=$PATH:$PLAN9/bin
     fi
 
