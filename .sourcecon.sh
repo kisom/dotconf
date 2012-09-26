@@ -121,8 +121,11 @@ checkout () {
     repo_type=$(get_repo_type)
     if [ "1" = "$repo_type" ]; then
         git checkout $@
-    elif [ "$2" = "$repo_type" ]; then
+    elif [ "2" = "$repo_type" ]; then
         hg checkout $@
+        if [ $? -ne 0 ]; then
+            hg revert $@
+        fi
     else
         not_a_repo
     fi
