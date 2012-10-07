@@ -1,3 +1,8 @@
+UXTerm*background: black
+UXTerm*foreground: green
+UXTerm*loginShell: true
 XTerm*background: black
 XTerm*foreground: green
 XTerm*loginShell: true
+
+xterm*faceName:           terminus:regular:pixelsize=14
