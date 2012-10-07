@@ -35,8 +35,8 @@ nn <F4> :setlocal hlsearch! hlsearch?<CR>
 nn ,i :%!indent -st<CR>
 
 " make clean
-nn ,c :make clean<CR>
 nn ,c :silent! make clean \| redraw! \| cw<CR><CR>
+nn ,t :silent! make tags \| redraw! \| cw<CR><CR>
 
 " mk options
 nn ,M :!mk<CR>
@@ -125,4 +125,4 @@ cabbrev shell Shell
 
 set term=screen256-color
 set background=light
-colorscheme hybrid
+colorscheme moria
