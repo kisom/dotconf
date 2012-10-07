@@ -55,10 +55,6 @@ if [ "$(uname -s)" = "OpenBSD" ]; then
     export GTK_IM_MODULE=xim
     export LESSCHARSET=utf-8
     
-    # JDK support
-    if [ -x /usr/local/jdk* ]; then
-        PATH=${PATH}:/usr/local/$(ls -1 /usr/local/ | grep jdk | xargs | sed -e 's/ /:/g')/bin
-    fi
 fi
 
 PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin:/usr/games
@@ -115,16 +111,6 @@ if [ "$(uname -s)" = "Darwin" ]; then
     source ${HOME}/.macos.zsh
 fi
 
-# the rvm init takes up time so i only load it when i need it
-if [ -d "${HOME}/.rvm" ]; then
-    source ${HOME}/.init_rvm.zsh
-    init_rvm
-fi
-
-if [ -x ~/.vim/autoload/pathogen.vim ]; then
-    function pathogen_install() { cp -r $1 ~/.vim/bundles/ }
-fi
-
 which youtube-dl 2>/dev/null 1>/dev/null
 if [ "$?" = "0" ]; then
     ytget () {
@@ -163,7 +149,10 @@ fi
 if [ -d "${HOME}/src/plan9" ]; then
         PLAN9=${HOME}/src/plan9 export PLAN9
         export PATH=$PATH:$PLAN9/bin
-    fi
+elif [ -d /usr/local/plan9 ]; then
+        PLAN9=/usr/local/plan9 export PLAN9
+        export PATH=$PATH:$PLAN9/bin
+fi
 
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
