@@ -123,6 +123,6 @@ command! -complete=shellcmd -nargs=* -bang Shell call s:ExecuteInShell(<q-args>,
 cabbrev shell Shell
 
 
-set term=screen256-color
+set term=screen-256color
 set background=light
-colorscheme moria
+colorscheme hybrid
