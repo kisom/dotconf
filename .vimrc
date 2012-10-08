@@ -6,7 +6,7 @@ set softtabstop=8
 set number
 set ruler
 set tabstop=8
-set autoindent
+set smartindent autoindent
 set showmode
 set showmatch
 set tags=./tags,tags,/usr/src/sys/arch/amd64/tags,/var/db/libc.tags
