@@ -1,24 +1,29 @@
 " General options
-set nocompatible
+set background=light
+set backspace=indent,eol,start
+set cindent autoindent
 set cinoptions=t0,+4,(4,u4,w1
-set shiftwidth=8
-set softtabstop=8
+set confirm
+set encoding=utf-8
+set expandtab
+set incsearch
+set mouse=a
+set nocompatible
+set nohlsearch
 set number
 set ruler
-set tabstop=8
-set smartindent autoindent
-set showmode
-set showmatch
-set tags=./tags,tags,/usr/src/sys/arch/amd64/tags,/var/db/libc.tags
-set nohlsearch
-set incsearch
-set backspace=indent,eol,start
+set shiftwidth=8
 set showcmd
+set showmatch
+set showmode
+set softtabstop=8
+set tabstop=8
+set tags=./tags,tags,/usr/src/sys/arch/amd64/tags,/var/db/libc.tags
+set term=screen-256color
 set ttyfast
-set mouse=a
-set confirm
-syntax off
+colorscheme hybrid
 source /usr/local/share/vim/vim73/ftplugin/man.vim
+syntax off
 
 " ^n/^p to switch between tabs
 nnoremap <C-n> :tabnext<Enter>
@@ -122,7 +127,9 @@ endfunction
 command! -complete=shellcmd -nargs=* -bang Shell call s:ExecuteInShell(<q-args>, '<bang>')
 cabbrev shell Shell
 
+" command! -bang Fixmake 
 
-set term=screen-256color
-set background=light
-colorscheme hybrid
+
+:ab #d #define
+:ab #i #include
+
