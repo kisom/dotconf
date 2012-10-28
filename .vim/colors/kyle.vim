@@ -47,7 +47,7 @@ hi Constant             cterm=None              ctermbg=NONE    ctermfg=NONE
 hi PreProc              cterm=None              ctermfg=NONE
 hi Directive            cterm=NONE              ctermbg=NONE    ctermfg=NONE
 hi Conditional          cterm=NONE              ctermbg=NONE    ctermfg=NONE
-hi Comment		cterm=bold		ctermbg=NONE    ctermfg=240
+hi Comment		cterm=NONE		ctermbg=NONE    ctermfg=245
 hi Func                 cterm=None              ctermbg=234     ctermfg=250
 hi Identifier           cterm=NONE              ctermbg=NONE    ctermfg=NONE
 hi Statement            cterm=NONE              ctermbg=NONE    ctermfg=NONE
