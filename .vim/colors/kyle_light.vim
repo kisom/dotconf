@@ -12,11 +12,7 @@ endif
 
 let colors_name = "kyle"
 
-if &background == "light"
-  hi Normal             cterm=NONE              ctermbg=7       ctermfg=235
-endif
-
-hi Normal             cterm=NONE              ctermbg=234     ctermfg=250
+hi Normal             cterm=NONE              ctermbg=7       ctermfg=235
 hi SpecialKey		cterm=bold		ctermfg=NONE
 hi IncSearch		cterm=reverse		ctermfg=NONE
 hi Search		cterm=reverse		ctermfg=NONE
