@@ -21,9 +21,9 @@ set tabstop=8
 set tags=./tags,tags,/usr/src/sys/arch/amd64/tags,/var/db/libc.tags
 set term=screen-256color
 set ttyfast
-colorscheme hybrid
+colorscheme kyle
 source /usr/local/share/vim/vim73/ftplugin/man.vim
-syntax off
+syntax on
 
 " ^n/^p to switch between tabs
 nnoremap <C-n> :tabnext<Enter>
