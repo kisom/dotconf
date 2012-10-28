@@ -16,13 +16,13 @@ if &background == "light"
   hi Normal             cterm=NONE              ctermbg=7       ctermfg=235
 endif
 
-hi Normal             cterm=NONE              ctermbg=234     ctermfg=250
+hi Normal               cterm=NONE              ctermbg=234     ctermfg=250
 hi SpecialKey		cterm=bold		ctermfg=NONE
 hi IncSearch		cterm=reverse		ctermfg=NONE
 hi Search		cterm=reverse		ctermfg=NONE
 hi MoreMsg		cterm=bold		ctermfg=NONE
 hi ModeMsg		cterm=bold		ctermfg=NONE
-hi LineNr		cterm=NONE		ctermfg=250
+hi LineNr		cterm=NONE		ctermfg=238
 hi StatusLine		cterm=bold,reverse	ctermfg=NONE
 hi StatusLineNC		cterm=reverse		ctermfg=NONE
 hi VertSplit		cterm=reverse		ctermfg=NONE

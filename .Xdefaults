@@ -4,6 +4,5 @@ UXTerm*loginShell: true
 XTerm*background: black
 XTerm*foreground: green
 XTerm*loginShell: true
-xterm*faceName:           inconsolata:regular:pixelsize=14
 xterm*faceName:           anonymous-pro:regular:pixelsize=14
 
