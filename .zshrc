@@ -1,6 +1,9 @@
 sudo -k                 # nuke sudo privs
 set -o noclobber
 EDITOR=emacs
+export CLICOLOR=1
+eval $(dircolors)
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
@@ -10,6 +13,7 @@ zstyle :compinstall filename '/Users/kisom/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -138,6 +142,12 @@ if [ "$?" = 0 ]; then
 fi
 
 # GoCode
+if [ -d /usr/local/go ]; then
+        PATH=${PATH}:/usr/local/go/bin
+elif [ -d /usr/go ]; then
+        PATH=${PATH}:/usr/go/bin
+fi
+
 which go 1>/dev/null 2>/dev/null
 if [ "$?" = 0 ]; then
     export GOPATH=${HOME}/code/go
