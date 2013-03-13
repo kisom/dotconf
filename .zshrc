@@ -146,6 +146,10 @@ if [ -d /usr/local/go ]; then
         PATH=${PATH}:/usr/local/go/bin
 elif [ -d /usr/go ]; then
         PATH=${PATH}:/usr/go/bin
+elif [ -d ${HOME}/src/go-tip ]; then
+        PATH=${PATH}:${HOME}/src/go-tip/bin
+elif [ -d ${HOME}/src/go ]; then
+        PATH=${PATH}:${HOME}/src/go/bin
 fi
 
 which go 1>/dev/null 2>/dev/null
@@ -164,6 +168,10 @@ elif [ -d /usr/local/plan9 ]; then
         export PATH=$PATH:$PLAN9/bin
 fi
 
+if [ -d ${HOME}/.rbenv ]; then
+        source ${HOME}/.rbenv.sh
+fi
+
 # compensate for a braindead linux package manager
 # apt-get works because i wouldn't be caught dead not using a !debian system
 if [ "$(uname -s)" = "Linux" ]; then
@@ -173,5 +181,10 @@ fi
 
 export LC_TYPE=en_US.UTF-8
 
+if [ -x ${HOME}/bin/gpg-agent.sh  -a -z "$(pgrep gpg-agent)" ]; then
+        ${HOME}/bin/gpg-agent.sh
+fi
 
 export PATH
+
+source ~/.node.sh
