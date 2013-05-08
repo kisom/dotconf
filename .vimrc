@@ -12,16 +12,16 @@ set nocompatible
 set nohlsearch
 set number
 set ruler
-set shiftwidth=8
+"set shiftwidth=8
 set showcmd
 set showmatch
 set showmode
-set softtabstop=8
-set tabstop=8
+"set softtabstop=8
+"set tabstop=8
 set tags=./tags,tags,/usr/src/sys/arch/amd64/tags,/var/db/libc.tags
 set term=screen-256color
 set ttyfast
-colorscheme eink
+colorscheme hybrid
 source /usr/share/vim/vim73/ftplugin/man.vim
 syntax on
 
@@ -135,4 +135,8 @@ cabbrev shell Shell
 
 :ab #d #define
 :ab #i #include
+
+autocmd FileType make setlocal noexpandtab
+autocmd FileType c setlocal noexpandtab
+autocmd FileType go setlocal noexpandtab
 
