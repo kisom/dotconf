@@ -159,6 +159,10 @@ if [ "$?" = 0 ]; then
     source ~/.go.sh
 fi
 
+if [ -d /usr/local/google_appengine ]; then
+        PATH="${PATH}:/usr/local/google_appengine"
+fi
+
 # plan9 from userland
 if [ -d "${HOME}/src/plan9" ]; then
         PLAN9=${HOME}/src/plan9 export PLAN9
@@ -188,3 +192,6 @@ fi
 export PATH
 
 source ~/.node.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
