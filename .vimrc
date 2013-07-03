@@ -1,5 +1,5 @@
 " General options
-set background=light
+set background=dark
 set backspace=indent,eol,start
 set cindent autoindent
 set cinoptions=t0,+4,(4,u4,w1
@@ -21,9 +21,8 @@ set showmode
 set tags=./tags,tags,/usr/src/sys/arch/amd64/tags,/var/db/libc.tags
 set term=screen-256color
 set ttyfast
-colorscheme hybrid
+colorscheme eink
 source /usr/share/vim/vim73/ftplugin/man.vim
-syntax on
 
 " ^n/^p to switch between tabs
 nnoremap <C-n> :tabnext<Enter>
@@ -132,11 +131,16 @@ cabbrev shell Shell
 
 " command! -bang Fixmake 
 
+" nmap <silent> <Leader>b :wa<CR>:silent! !go build \| redraw! \| cw<CR><CR>
+" nmap <silent> <Leader>o :wa<CR>:silent! !go fmt \| redraw! \| cw<CR><CR>
+" nmap <silent> <Leader>t :wa<CR>:silent! !go test \| redraw! \| cw<CR><CR>
 
 :ab #d #define
 :ab #i #include
 
 autocmd FileType make setlocal noexpandtab
 autocmd FileType c setlocal noexpandtab
+autocmd FileType cc setlocal noexpandtab
 autocmd FileType go setlocal noexpandtab
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4
 
